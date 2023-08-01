@@ -1,0 +1,2 @@
+class Rubrique < ApplicationRecord
+end
