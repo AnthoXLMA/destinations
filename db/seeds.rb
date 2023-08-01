@@ -5,3 +5,23 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+puts "Deleting Themes"
+Theme.delete_all
+puts "Deleting Destinations"
+Destination.delete_all
+
+puts 'Creating Destinations...'
+@destinationspath = "./db/fixtures/destinations.json"
+@serialized_destinations = File.read(@destinationspath)
+@destinations = JSON.parse(@serialized_destinations)
+@destinations.each do |d|
+  Destination.create(city: d['city'])
+end
+
+puts 'Creating Themes...'
+@themespath = "./db/fixtures/themes.json"
+@serialized_themes = File.read(@themespath)
+@themes = JSON.parse(@serialized_themes)
+@themes.each do |t|
+  Theme.create(title: t['title'])
+end

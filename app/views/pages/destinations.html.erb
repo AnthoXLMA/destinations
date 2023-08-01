@@ -1,7 +1,14 @@
 <h1>Destinations</h1>
-<h2>Discover our destinations</h2>
 <ol>
   <% @destinations.each do |destination| %>
-    <li><%= destination.capitalize %></li>
+    <li><%=  destination.city %></li>
+  <% end %>
+</ol>
+
+
+<h1>Themes</h1>
+<ol>
+  <% @themes.each do |theme| %>
+    <li><%=  theme.title %></li>
   <% end %>
 </ol>
