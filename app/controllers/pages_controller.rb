@@ -10,6 +10,12 @@ class PagesController < ApplicationController
   end
 
   def destinations
-    @destinations = ["Saint-Tropez", "Courchevel", "Saint-barthélémy", "Miami", "Saint-Martin"]
+    @trips = ["Saint-Tropez", "Courchevel", "Saint-barthélémy", "Miami", "Saint-Martin"]
+    @destinations = Destination.all
+    @themes = Theme.all
+  end
+
+  def themes
+    @themes = Theme.all
   end
 end
