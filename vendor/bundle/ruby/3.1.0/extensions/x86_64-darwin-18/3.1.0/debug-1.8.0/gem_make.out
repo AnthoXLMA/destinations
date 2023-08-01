@@ -1,0 +1,16 @@
+current directory: /Users/anthony/code/AnthoXLMA/destinations/vendor/bundle/ruby/3.1.0/gems/debug-1.8.0/ext/debug
+/Users/anthony/.rbenv/versions/3.1.2/bin/ruby -I /Users/anthony/.rbenv/versions/3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/anthony/code/AnthoXLMA/destinations/vendor/bundle/ruby/3.1.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230801-25765-ms1pxs sitelibdir\=./.gem.20230801-25765-ms1pxs clean
+
+current directory: /Users/anthony/code/AnthoXLMA/destinations/vendor/bundle/ruby/3.1.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230801-25765-ms1pxs sitelibdir\=./.gem.20230801-25765-ms1pxs
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/anthony/code/AnthoXLMA/destinations/vendor/bundle/ruby/3.1.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230801-25765-ms1pxs sitelibdir\=./.gem.20230801-25765-ms1pxs install
+/usr/local/bin/ginstall -c -m 0755 debug.bundle ./.gem.20230801-25765-ms1pxs/debug
