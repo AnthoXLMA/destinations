@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_01_075246) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_03_154653) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -30,6 +30,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_01_075246) do
     t.string "chapter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "theme_id", null: false
+    t.index ["theme_id"], name: "index_rubriques_on_theme_id"
   end
 
   create_table "themes", force: :cascade do |t|
@@ -38,4 +40,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_01_075246) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "rubriques", "themes"
 end

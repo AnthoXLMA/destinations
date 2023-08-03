@@ -1,6 +1,6 @@
-[{"chapter":"Saint-Tropez"},
-  {"chapter":"Mégève"},
-  {"chapter":"Courchevel"},
-  {"chapter":"Saint-Barthélémy"},
-  {"chapter":"Saint-Martin"},
-  {"chapter":"Miami"}]
+[{"chapter":"Musées", "theme_id":"2"},
+  {"chapter":"Restaurants", "theme_id":"2"},
+  {"chapter":"Restaurants du Golfe", "theme_id":"1"},
+  {"chapter":"Saint-Barthélémy", "theme_id":"3"},
+  {"chapter":"Saint-Martin", "theme_id":"3"},
+  {"chapter":"Miami", "theme_id":"4"}]
