@@ -5,6 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts "Deleting Rubriques"
+Rubrique.delete_all
 puts "Deleting Themes"
 Theme.delete_all
 puts "Deleting Destinations"
@@ -24,4 +27,12 @@ puts 'Creating Themes...'
 @themes = JSON.parse(@serialized_themes)
 @themes.each do |t|
   Theme.create(title: t['title'])
+end
+
+puts 'Creating Rubriques...'
+@rubriquespath = "./db/fixtures/rubriques.json"
+@serialized_rubriques = File.read(@rubriquespath)
+@rubriques = JSON.parse(@serialized_rubriques)
+@rubriques.each do |c|
+  Rubrique.create(chapter: c['chapter'], theme_id: c['theme_id'])
 end
