@@ -4,3 +4,10 @@
     <li><%=  theme.title %></li>
   <% end %>
 </ol>
+
+<h1>Rubriques</h1>
+<ol>
+  <% @rubriques.each do |rubrique| %>
+    <li><%=  rubrique.chapter %></li>
+  <% end %>
+</ol>

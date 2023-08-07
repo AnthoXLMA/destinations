@@ -8,7 +8,10 @@
 
 <h1>Themes</h1>
 <ol>
-  <% @themes.each do |theme| %>
-    <li><%=  theme.title %></li>
+  <% @themes.each do |t| %>
+    <li><%=  t.title %></li>
+    <% Rubrique.where(theme_id: t.id).each do |r| %>
+    <ul><%= r.chapter %></ul>
+    <% end %>
   <% end %>
 </ol>
