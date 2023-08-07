@@ -1,6 +1,11 @@
-[{"chapter":"Musées", "theme_id":"2"},
-  {"chapter":"Restaurants", "theme_id":"2"},
-  {"chapter":"Restaurants du Golfe", "theme_id":"1"},
-  {"chapter":"Saint-Barthélémy", "theme_id":"3"},
-  {"chapter":"Saint-Martin", "theme_id":"3"},
-  {"chapter":"Miami", "theme_id":"4"}]
+[{"chapter":"Fashion & Gifts", "theme_id":"1"},
+  {"chapter":"Home decor", "theme_id":"2"},
+  {"chapter":"Art & Culture", "theme_id":"3"},
+  {"chapter":"Restaurants of Saint-Tropez", "theme_id":"4"},
+  {"chapter":"Restaurants of The Gulf of Saint-Tropez", "theme_id":"4"},
+  {"chapter":"Beach Restaurants", "theme_id":"5"},
+  {"chapter":"Bars - Lounges - Nightlife", "theme_id":"6"},
+  {"chapter":"Fine Food and local produce", "theme_id":"7"},
+  {"chapter":"Beauty & Well Being", "theme_id":"8"},
+  {"chapter":"Sport & Leisure", "theme_id":"9"}
+]
