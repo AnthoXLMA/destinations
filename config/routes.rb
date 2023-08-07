@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get "contact", to: "pages#contact"
   get "destinations", to: "pages#destinations"
   get "themes", to: "pages#themes"
+
+  resources :rubriques, only: [:index, :show]
 end

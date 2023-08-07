@@ -1,0 +1,3 @@
+<% @rubriques.each do |rubrique| %>
+  <li><%= link_to rubrique.chapter, rubrique_path(rubrique.id) %></li>
+<% end %>

@@ -10,8 +10,8 @@
 <ol>
   <% @themes.each do |t| %>
     <li><%=  t.title %></li>
-    <% Rubrique.where(theme_id: t.id).each do |r| %>
-    <ul><%= r.chapter %></ul>
+      <% Rubrique.where(theme_id: t.id).each do |r| %>
+      <ul><%= link_to r.chapter, rubrique_path(r.id) %></ul>
     <% end %>
   <% end %>
 </ol>
